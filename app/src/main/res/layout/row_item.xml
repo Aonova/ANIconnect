@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="92dp"
+    android:background="@drawable/border_bg">
+
+    <TextView
+        android:id="@+id/titleText_rowItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="DefaultText"
+        android:textColor="#00363a"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/titleImg_rowItem"
+        app:layout_constraintStart_toEndOf="@+id/titleImg_rowItem"
+        app:layout_constraintTop_toTopOf="@+id/titleImg_rowItem" />
+
+    <TextView
+        android:id="@+id/epText_rowItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="DefaultText"
+        android:textColor="#78909c"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/dateText_rowItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="DefaultText"
+        android:textColor="#78909c"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+    <ImageView
+        android:id="@+id/titleImg_rowItem"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_item" />
+
+    <TextView
+        android:id="@+id/titleSubText_rowItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="DefaultText"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/titleText_rowItem"
+        app:layout_constraintStart_toEndOf="@+id/titleText_rowItem"
+        app:layout_constraintTop_toTopOf="@+id/titleText_rowItem" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleImg_rowItem"
+        app:srcCompat="@drawable/ic_baseline_video_library_24" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:srcCompat="@drawable/ic_baseline_calendar_today_24" />
+
+    <ImageButton
+        android:id="@+id/linkButton_rowItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00363a"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_baseline_link_24" />
+
+    <ImageButton
+        android:id="@+id/launchButton_rowItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00363a"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/webButton_rowItem"
+        app:srcCompat="@drawable/ic_baseline_launch_24" />
+
+    <ImageButton
+        android:id="@+id/webButton_rowItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00363a"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/linkButton_rowItem"
+        app:srcCompat="@drawable/ic_baseline_web_24" />
+
+    <ImageButton
+        android:id="@+id/delButton_rowItem"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#C62828"
+        app:layout_constraintBottom_toTopOf="@+id/linkButton_rowItem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/linkButton_rowItem"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_delete_forever_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

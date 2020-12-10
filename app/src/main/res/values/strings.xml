@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ANIconnect</string>
+    <string name="buttonMain_login">Submit</string>
 </resources>
